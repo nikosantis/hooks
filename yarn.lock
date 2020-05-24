@@ -26,6 +26,11 @@
   resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-9.28.3.tgz#aa36180e53ed59cae55e923659d7154655102ffd"
   integrity sha512-PCKvowPpltlIKGWKcX+DhRfxP9V/vUWYsCC7ltBwq+dXHhq9BL8tTRKu7XiByMf773cKgYMCCAo4QTJwQF5fbw==
 
+"@auto-it/bot-list@^9.36.2":
+  version "9.36.2"
+  resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-9.36.2.tgz#c8e271eae1255f4fb5659644d57704cf0013f272"
+  integrity sha512-eCQPAIpyjLfz1LLoycan+U7jpsFGK2qUVQCUuPXFlWeYSgEP6uS0647mvPJ7G9Mg6ZE3dVVy/Q22lc1Awlxpbg==
+
 "@auto-it/core@^9.26.8":
   version "9.26.8"
   resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.26.8.tgz#9bfdd237316898df3dbd18d7001209497099792d"
@@ -108,14 +113,54 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/first-time-contributor@9.28.3":
-  version "9.28.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-9.28.3.tgz#04fbceb28b97beebf4e1ca71f201ee7153907d30"
-  integrity sha512-wKPldRPfOYZC08XqjknxD9ZtsKoRZaaNrulc3Gip6kVbwagNBp7EwgpJP2X4d9N/Ibg5F6rWDagPq0qbYHBDxg==
+"@auto-it/core@^9.36.2":
+  version "9.36.2"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.36.2.tgz#c7ce6838520c00f994cc95e58c1ccf2b09815b25"
+  integrity sha512-Oj6zT3adVz6dKebUxZtKRnf/kXBkzY1ja+F1Jr/WVs+lZcVM33w3qSJHdJUQajvd9yJebIvbkFYKWsyTvW6Nag==
   dependencies:
-    "@auto-it/core" "^9.28.3"
+    "@auto-it/bot-list" "^9.36.2"
+    "@octokit/graphql" "^4.4.0"
+    "@octokit/plugin-enterprise-compatibility" "^1.2.2"
+    "@octokit/plugin-retry" "^3.0.1"
+    "@octokit/plugin-throttling" "^3.2.0"
+    "@octokit/rest" "^17.9.0"
+    await-to-js "^2.1.1"
+    chalk "^4.0.0"
+    cosmiconfig "6.0.0"
+    deepmerge "^4.0.0"
+    dotenv "^8.0.0"
+    endent "^2.0.1"
+    enquirer "^2.3.4"
+    env-ci "^5.0.1"
+    fast-glob "^3.1.1"
+    fp-ts "^2.5.3"
+    fromentries "^1.2.0"
+    gitlog "^4.0.0"
+    https-proxy-agent "^5.0.0"
+    import-cwd "^3.0.0"
+    import-from "^3.0.0"
+    io-ts "^2.1.2"
+    lodash.chunk "^4.2.0"
+    log-symbols "^4.0.0"
+    node-fetch "2.6.0"
+    parse-github-url "1.0.2"
+    semver "^7.0.0"
+    signale "^1.4.0"
+    tapable "^2.0.0-beta.2"
+    terminal-link "^2.1.1"
+    tinycolor2 "^1.4.1"
+    tslib "1.11.1"
+    typescript-memoize "^1.0.0-alpha.3"
+    url-join "^4.0.0"
+
+"@auto-it/first-time-contributor@9.36.2":
+  version "9.36.2"
+  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-9.36.2.tgz#a215ba9bf4522e83346ea1a4ccec6459a45e6c5d"
+  integrity sha512-EphQDZwtdnge1dAGcVP2cyeLI4eoUesc6blVyLTi9x9qF68TX4mY/sWcrrzlrrWT0PDCgtzSytA8khl6/60M1g==
+  dependencies:
+    "@auto-it/core" "^9.36.2"
     array.prototype.flatmap "^1.2.2"
-    endent "^1.3.0"
+    endent "^2.0.1"
     tslib "1.11.1"
     url-join "^4.0.0"
 
@@ -1223,12 +1268,33 @@
     before-after-hook "^2.1.0"
     universal-user-agent "^5.0.0"
 
+"@octokit/core@^2.4.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-2.5.3.tgz#dd754e6f5ad9b15631e9b276ae4f00ac2ea2cf9b"
+  integrity sha512-23AHK9xBW0v79Ck8h5U+5iA4MW7aosqv+Yr6uZXolVGNzzHwryNH5wM386/6+etiKUTwLFZTqyMU9oQpIBZcFA==
+  dependencies:
+    "@octokit/auth-token" "^2.4.0"
+    "@octokit/graphql" "^4.3.1"
+    "@octokit/request" "^5.4.0"
+    "@octokit/types" "^4.0.1"
+    before-after-hook "^2.1.0"
+    universal-user-agent "^5.0.0"
+
 "@octokit/endpoint@^5.5.0":
   version "5.5.3"
   resolved "https://registry.npmjs.org/@octokit/endpoint/-/endpoint-5.5.3.tgz#0397d1baaca687a4c8454ba424a627699d97c978"
   integrity sha512-EzKwkwcxeegYYah5ukEeAI/gYRLv2Y9U5PpIsseGSFDk+G3RbipQGBs8GuYS1TLCtQaqoO66+aQGtITPalxsNQ==
   dependencies:
     "@octokit/types" "^2.0.0"
+    is-plain-object "^3.0.0"
+    universal-user-agent "^5.0.0"
+
+"@octokit/endpoint@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@octokit/endpoint/-/endpoint-6.0.1.tgz#16d5c0e7a83e3a644d1ddbe8cded6c3d038d31d7"
+  integrity sha512-pOPHaSz57SFT/m3R5P8MUu4wLPszokn5pXcB/pzavLTQf2jbU+6iayTvzaY6/BiotuRS0qyEUkx3QglT4U958A==
+  dependencies:
+    "@octokit/types" "^2.11.1"
     is-plain-object "^3.0.0"
     universal-user-agent "^5.0.0"
 
@@ -1241,6 +1307,15 @@
     "@octokit/types" "^2.0.0"
     universal-user-agent "^4.0.0"
 
+"@octokit/graphql@^4.4.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@octokit/graphql/-/graphql-4.5.0.tgz#e111f841bc15722b1e9887f447fccab700cacdad"
+  integrity sha512-StJWfn0M1QfhL3NKBz31e1TdDNZrHLLS57J2hin92SIfzlOVBuUaRkp31AGkGOAFOAVtyEX6ZiZcsjcJDjeb5g==
+  dependencies:
+    "@octokit/request" "^5.3.0"
+    "@octokit/types" "^4.0.1"
+    universal-user-agent "^5.0.0"
+
 "@octokit/plugin-enterprise-compatibility@1.2.2":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-enterprise-compatibility/-/plugin-enterprise-compatibility-1.2.2.tgz#a30b635b63760e1504e57af5cf54da058b32a1de"
@@ -1249,12 +1324,27 @@
     "@octokit/request-error" "^2.0.0"
     "@octokit/types" "^2.0.1"
 
+"@octokit/plugin-enterprise-compatibility@^1.2.2":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-enterprise-compatibility/-/plugin-enterprise-compatibility-1.2.4.tgz#617ab902b571cf3fd01e99f33850590fbc297638"
+  integrity sha512-NN9U8bR0xWK5VeimTuk7kzQkPGFdICF0+7Oj5MYwbpr6IKu63Sp/aSNzhV7Q7bNasHC8mCHTyftAufrrzazJGQ==
+  dependencies:
+    "@octokit/request-error" "^2.0.0"
+    "@octokit/types" "^4.0.1"
+
 "@octokit/plugin-paginate-rest@^1.1.1":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-1.1.2.tgz#004170acf8c2be535aba26727867d692f7b488fc"
   integrity sha512-jbsSoi5Q1pj63sC16XIUboklNw+8tL9VOnJsWycWYR78TKss5PVpIPb1TUUcMQ+bBh7cY579cVAWmf5qG+dw+Q==
   dependencies:
     "@octokit/types" "^2.0.1"
+
+"@octokit/plugin-paginate-rest@^2.2.0":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.2.1.tgz#b95ec46c841d51e5e625f383c579d132ab216d05"
+  integrity sha512-/tHpIF2XpN40AyhIq295YRjb4g7Q5eKob0qM3thYJ0Z+CgmNsWKM/fWse/SUR8+LdprP1O4ZzSKQE+71TCwK+w==
+  dependencies:
+    "@octokit/types" "^4.0.1"
 
 "@octokit/plugin-request-log@^1.0.0":
   version "1.0.0"
@@ -1269,12 +1359,28 @@
     "@octokit/types" "^2.0.1"
     deprecation "^2.3.1"
 
+"@octokit/plugin-rest-endpoint-methods@^3.12.2":
+  version "3.12.2"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-3.12.2.tgz#3da0422531db806204e20ec9a014dea89bec1f29"
+  integrity sha512-QUfJ6nriHpwTxf8As99kEyDQV4AGQvypsM8Xyx5rsWi6JY7rzjOkZrleRrFq0aiNcQo7acM4bwaXq462OKTJ9w==
+  dependencies:
+    "@octokit/types" "^4.0.0"
+    deprecation "^2.3.1"
+
 "@octokit/plugin-retry@3.0.1":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@octokit/plugin-retry/-/plugin-retry-3.0.1.tgz#4f17e4349b89754fd06951b548f08e2d8e7dd311"
   integrity sha512-X+VALkeYyE4XGMHOoOnRS1/OvwvleZ2Xe3yxshaAKJrA4pbjBYptDx7IAY9xQj5JYY9vlCKUsXEZMWLRNxfViw==
   dependencies:
     "@octokit/types" "^2.0.1"
+    bottleneck "^2.15.3"
+
+"@octokit/plugin-retry@^3.0.1":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-retry/-/plugin-retry-3.0.2.tgz#1055728d1d0e25287ef3cc30bf3321c942bf44a4"
+  integrity sha512-k7xl2WLfLP7WirRXRHtCq5xGAIXBZHV9X3HVUJhPwe8/N8vVzxPcnnnBL5NpEep/+GQqFRdYxrkgz68VY3z2wA==
+  dependencies:
+    "@octokit/types" "^4.0.1"
     bottleneck "^2.15.3"
 
 "@octokit/plugin-throttling@^3.2.0":
@@ -1317,6 +1423,20 @@
     once "^1.4.0"
     universal-user-agent "^5.0.0"
 
+"@octokit/request@^5.4.0":
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-5.4.3.tgz#85b78ea4ae6e1c4ac2b02528102d4cd776145935"
+  integrity sha512-RtqMzF3mhqxmWoqVD84x2gdtbqn2inTBU/HPkWf5u0R5r7fBTaLPAcCBgukeI2gjTwD9ChL9Cu0MlTBs7B/tSw==
+  dependencies:
+    "@octokit/endpoint" "^6.0.1"
+    "@octokit/request-error" "^2.0.0"
+    "@octokit/types" "^2.11.1"
+    deprecation "^2.0.0"
+    is-plain-object "^3.0.0"
+    node-fetch "^2.3.0"
+    once "^1.4.0"
+    universal-user-agent "^5.0.0"
+
 "@octokit/rest@16.43.1":
   version "16.43.1"
   resolved "https://registry.npmjs.org/@octokit/rest/-/rest-16.43.1.tgz#3b11e7d1b1ac2bbeeb23b08a17df0b20947eda6b"
@@ -1339,10 +1459,34 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
+"@octokit/rest@^17.9.0":
+  version "17.9.2"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-17.9.2.tgz#725476630c7bc7d59488b8337a0936255d24b7ff"
+  integrity sha512-UXxiE0HhGQAPB3WDHTEu7lYMHH2uRcs/9f26XyHpGGiiXht8hgHWEk6fA7WglwwEvnj8V7mkJOgIntnij132UA==
+  dependencies:
+    "@octokit/core" "^2.4.3"
+    "@octokit/plugin-paginate-rest" "^2.2.0"
+    "@octokit/plugin-request-log" "^1.0.0"
+    "@octokit/plugin-rest-endpoint-methods" "^3.12.2"
+
 "@octokit/types@^2.0.0", "@octokit/types@^2.0.1":
   version "2.5.0"
   resolved "https://registry.npmjs.org/@octokit/types/-/types-2.5.0.tgz#f1bbd147e662ae2c79717d518aac686e58257773"
   integrity sha512-KEnLwOfdXzxPNL34fj508bhi9Z9cStyN7qY1kOfVahmqtAfrWw6Oq3P4R+dtsg0lYtZdWBpUrS/Ixmd5YILSww==
+  dependencies:
+    "@types/node" ">= 8"
+
+"@octokit/types@^2.11.1":
+  version "2.16.2"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-2.16.2.tgz#4c5f8da3c6fecf3da1811aef678fda03edac35d2"
+  integrity sha512-O75k56TYvJ8WpAakWwYRN8Bgu60KrmX0z1KqFp1kNiFNkgW+JW+9EBKZ+S33PU6SLvbihqd+3drvPxKK68Ee8Q==
+  dependencies:
+    "@types/node" ">= 8"
+
+"@octokit/types@^4.0.0", "@octokit/types@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-4.0.1.tgz#dd32ff2407699f3a0c909cdd24de17b45b7d7051"
+  integrity sha512-Ho6h7w2h9y8RRE8r656hIj1oiSbwbIHJGF5r9G5FOwS2VdDPq8QLGvsG4x6pKHpvyGK7j+43sAc2cJKMiFoIJw==
   dependencies:
     "@types/node" ">= 8"
 
@@ -3062,6 +3206,15 @@ endent@^1.3.0:
   version "1.4.1"
   resolved "https://registry.npmjs.org/endent/-/endent-1.4.1.tgz#c58cc13dfc432d0b2c7faf74c13ffdca60b2d1c8"
   integrity sha512-buHTb5c8AC9NshtP6dgmNLYkiT+olskbq1z6cEGvfGCF3Qphbu/1zz5Xu+yjTDln8RbxNhPoUyJ5H8MSrp1olQ==
+  dependencies:
+    dedent "^0.7.0"
+    fast-json-parse "^1.0.3"
+    objectorarray "^1.0.4"
+
+endent@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/endent/-/endent-2.0.1.tgz#fb18383a3f37ae3213a5d9f6c4a880d1061eb4c5"
+  integrity sha512-mADztvcC+vCk4XEZaCz6xIPO2NHQuprv5CAEjuVAu6aZwqAj7nVNlMyl1goPFYqCCpS2OJV9jwpumJLkotZrNw==
   dependencies:
     dedent "^0.7.0"
     fast-json-parse "^1.0.3"
@@ -5301,6 +5454,13 @@ log-symbols@^3.0.0:
   integrity sha512-dSkNGuI7iG3mfvDzUuYZyvk5dD9ocYCYzNU6CYDE6+Xqd+gwme6Z00NS3dUh8mq/73HaEtT7m6W+yUPtU6BZnQ==
   dependencies:
     chalk "^2.4.2"
+
+log-symbols@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-4.0.0.tgz#69b3cc46d20f448eccdb75ea1fa733d9e821c920"
+  integrity sha512-FN8JBzLx6CzeMrB0tg6pqlGU1wCrXW+ZXGH481kfsBqer0hToTIiHdjH4Mq8xJUbvATujKCvaREGWpGUionraA==
+  dependencies:
+    chalk "^4.0.0"
 
 logkitty@^0.6.0:
   version "0.6.1"
